@@ -1,7 +1,8 @@
 
 jQuery(document).ready(function($) {
-		console.log("foo");
+
 		var typing_timer;
+		
 		/*! 
 		 * GET call and executes a callback when the promise is fullfilled
 		 * @param methodType [GET, POST, PUT, DELETE]
@@ -41,6 +42,7 @@ jQuery(document).ready(function($) {
 
 		var loadResults = function (term) {
 			term = !term ? " " : term;
+			$('#downloadCSV').data('search', term);
 			return _ajaxRequest('POST', 'assets/inc/process.php', encodeURI('s='+term), true, loadResults_callback);
 		};
 
@@ -49,7 +51,7 @@ jQuery(document).ready(function($) {
 			response.statuses.forEach(function(element, index){
 				// TO DO: Implement handlebars and render templates
 				$('#twitContainer').append("\
-						<div class'each-twit'>\
+						<div class='each-twit'>\
 							<div><p class='user-details'>@"+element.user.screen_name+"</p></div>\
 							<time>"+element.created_at+"</time>\
 							<p>"+element.text+"</p>\
@@ -57,4 +59,9 @@ jQuery(document).ready(function($) {
 					\ ");
 			});
 		};
+
+
+		$('#downloadCSV').on('click', function(){
+			// Execute csv exporter
+		});
 });

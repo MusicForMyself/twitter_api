@@ -42,3 +42,18 @@ figure {margin: 0;}
 /* For IE 6/7 (trigger hasLayout) */
 .clearfix { zoom:1; }
 
+/*General*/
+.container{width: 100%; min-height: 100vh;}
+.buttonlike{display: block; float: right; padding: 1rem; background: #165065; width: 124px; color: #FFF; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; border: 1px solid rgba(38, 156, 199, 0.78);}
+
+.twitter_search{ padding: 12rem; background-color: #0084b4;}
+.twitter_search h2{font-size: 1.2rem; color: #FFF; font-weight: 300; letter-spacing: 1px;}
+.twitter_search form input{width: 45%; padding: 0.5rem; color: #424242; }
+
+/*Feed*/
+.twit_container{display: block; padding: 1rem; background-color: #FFF; border: 1px solid #165065; max-height: 70vh; overflow: scroll;}
+
+	.each-twit{margin: 0 0 1rem 0; padding-bottom: 1rem; border-bottom: 1px solid #b29c99;}
+	.each-twit .user-details{color: #0084b4; font-weight: 700; font-size: 0.9rem;}
+	.each-twit time{font-size: 0.7rem; color: #999; margin: 0.25rem 0; display: block;}
+	.each-twit>p{margin: 0; line-height: 2rem; font-size: 1.3rem; color: #524c4c;}

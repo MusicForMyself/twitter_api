@@ -10,16 +10,18 @@
 		<script src="assets/js/functions.js"  type="text/javascript" ></script>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container twitter_search">
+			<h2>Introduce un hashtag para comenzar la búsqueda</h2>
 			<form action="">
-				<label>#<input onkeyup="searchProjects();" type="text" placeholder="Buscar en Twitter" name="hashtag" id="hashtag"></label>
+				<label><input onkeyup="searchProjects();" type="text" placeholder="Búsqueda por hashtag" name="hashtag" id="hashtag"></label>
 				<!-- <select name="city" id="city_select">
 					<option value="">Seleccionar ciudad</option>
 				</select> -->
 			</form>
-			<a href="#" id="downloadCSV" class="download_csv">Descargar</a>
+			<a href="#" id="downloadCSV" data-search="" class="buttonlike">Descargar</a>
+			<div class="clearfix"></div>
 			<section id="twitContainer" class="twit_container">
-				
+				<p>No hay resultados que mostrar</p>
 			</section>
 		</div><!-- container -->
 	</body>
