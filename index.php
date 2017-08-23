@@ -18,7 +18,11 @@
 					<option value="">Seleccionar ciudad</option>
 				</select> -->
 			</form>
-			<a href="#" id="downloadCSV" data-search="" class="buttonlike">Descargar</a>
+			<form action="assets/inc/process.php" method="POST">
+				<input type="hidden" id="hidden_search" name="s" value="">
+				<input type="hidden" name="export" value="true">
+				<input type="submit" value="Descargar" id="downloadCSV" class="buttonlike">
+			</form>
 			<div class="clearfix"></div>
 			<section id="twitContainer" class="twit_container">
 				<p>No hay resultados que mostrar</p>

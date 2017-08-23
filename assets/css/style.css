@@ -55,5 +55,6 @@ figure {margin: 0;}
 
 	.each-twit{margin: 0 0 1rem 0; padding-bottom: 1rem; border-bottom: 1px solid #b29c99;}
 	.each-twit .user-details{color: #0084b4; font-weight: 700; font-size: 0.9rem;}
+	.each-twit .user-profile{float: left; margin-right: 1rem;}
 	.each-twit time{font-size: 0.7rem; color: #999; margin: 0.25rem 0; display: block;}
 	.each-twit>p{margin: 0; line-height: 2rem; font-size: 1.3rem; color: #524c4c;}
